@@ -20,7 +20,7 @@ define('DB_NAME', 'cocadmin');
 define('DB_HOST', 'ansible_db_1');
 
 
-$dsn="mysql:dbname=;${DB_NAME}host=${DB_HOST}";
+$dsn="mysql:dbname=".DB_NAME.";host=".DB_HOST;
 $db = new PDO($dsn, DB_USER, DB_PASS);
 $ITEMS = array();
 
