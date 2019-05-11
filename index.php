@@ -17,9 +17,11 @@
 define('DB_USER', 'cocadmin');
 define('DB_PASS', '1234');
 define('DB_NAME', 'cocadmin');
+define('DB_HOST', 'cocadmin');
 
-$dns="mysql:dbname=;${DB_NAME}host=127.0.0.1'"
-$db = new PDO($dns, DB_USER, DB_PASS);
+
+$dsn="mysql:dbname=;${DB_NAME}host=${DB_HOST}";
+$db = new PDO($dsn, DB_USER, DB_PASS);
 $ITEMS = array();
 
 function get(&$var, $default=null) {
