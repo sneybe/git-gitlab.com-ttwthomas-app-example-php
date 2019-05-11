@@ -17,7 +17,7 @@
 define('DB_USER', 'cocadmin');
 define('DB_PASS', '1234');
 define('DB_NAME', 'cocadmin');
-define('DB_HOST', 'cocadmin');
+define('DB_HOST', 'ansible_db_1');
 
 
 $dsn="mysql:dbname=;${DB_NAME}host=${DB_HOST}";
