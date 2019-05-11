@@ -1,5 +1,7 @@
 CONNECT cocadmin;
 
+drop table `todo`;
+
 CREATE TABLE `todo` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `title` varchar(2048) NOT NULL,
