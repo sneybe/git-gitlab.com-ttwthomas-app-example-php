@@ -57,7 +57,7 @@ default:
 ?>
 <html>
 <head>
-	<title> Sample TODO App </title>
+	<title> Sample TODO App <?php echo(gethostname())?></title>
 	<style>
 		div, body, html {
 			margin: 0px;
