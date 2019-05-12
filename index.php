@@ -35,7 +35,7 @@ case 'new':
 	if(!$stmt->execute(array($title))) {
 			die(print_r($stmt->errorInfo(), true));
 	}
-	header("Location: ".$_SERVER['DOCUMENT_URI']);
+	header("Location: index.php");
 	die();
 case 'toggle':
 	$id = get($_GET['id']);
@@ -45,7 +45,7 @@ case 'toggle':
 			die(print_r($stmt->errorInfo(), true));
 		}
 	}
-	header("Location: ".$_SERVER['DOCUMENT_URI']);
+    header("Location: index.php");
 	die();
 default:
 	break;
