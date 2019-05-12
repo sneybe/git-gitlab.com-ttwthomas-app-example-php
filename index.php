@@ -57,7 +57,7 @@ default:
 ?>
 <html>
 <head>
-	<title> Sample TODO App <?php echo(gethostname())?></title>
+	<title> Sample TODO App </title>
 	<style>
 		div, body, html {
 			margin: 0px;
@@ -124,7 +124,13 @@ default:
 	</style>
 </head>
 <body>
-	<h1>Sample TODO</h1>
+<?php
+// Verifie la connection a la bdd et affiche le hostname
+$stmt = $db->prepare('SELECT 1');
+if ($stmt->execute()) 
+    $sqlstatus = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+	<h1>Sample TODO <?php if ( $sqlstatus[0][1] == "1" ) echo(gethostname()) ?></h1>
 	<div id="new-task">
 		<input id="task-title" name="title" type="text" placeholder="Task Title"><button id='new-task-button'>Add</button>
 	</div>
