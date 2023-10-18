@@ -14,10 +14,10 @@
    limitations under the License.
 -->
 <?php
-define('DB_USER', 'cocadmin');
+define('DB_USER', 'Samba');
 define('DB_PASS', '1234');
-define('DB_NAME', 'cocadmin');
-define('DB_HOST', 'ansible_db_1');
+define('DB_NAME', 'Samba_test');
+define('DB_HOST', 'ansible-db-server1');
 
 
 $dsn="mysql:dbname=".DB_NAME.";host=".DB_HOST;
