@@ -1,4 +1,4 @@
-CONNECT cocadmin;
+CONNECT Samba_test;
 
 DROP TABLE IF EXISTS `todo`;
 
