@@ -146,7 +146,7 @@ if ($stmt->execute())
 			<?php endforeach; ?>
 		</ul>
 	</div>
-	<h1>version 3.0</h1>
+	<h1>version 4.0</h1>
 	<script>
 		document.getElementById('new-task-button').onclick = function(){
 			window.location.href = '?action=new&title=' + encodeURI(document.getElementById('task-title').value);		
